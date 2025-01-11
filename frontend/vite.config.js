@@ -4,10 +4,8 @@ import 'dotenv/config'
 
 // https://vite.dev/config/
 export default defineConfig({
-  server:{
-    proxy:{
-      '/api': process.env.VITE_PROXY_URL,
-    },
+  define: {
+    'process.env': process.env
   },
   plugins: [react()],
 })
