@@ -6,7 +6,7 @@ import 'dotenv/config'
 export default defineConfig({
   server:{
     proxy:{
-      '/api': process.env.PROXY_URL,
+      '/api': process.env.VITE_PROXY_URL,
     },
   },
   plugins: [react()],
