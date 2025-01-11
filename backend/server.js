@@ -26,5 +26,5 @@ app.get('/api/jokes',(req,res)=>{
 const port = process.env.PORT
 
 app.listen(port,()=>{
-    console.log(`serve at http://localhost:${port}`)
+    console.log(`PORT: ${port}`)
 })
